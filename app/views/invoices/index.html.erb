@@ -4,5 +4,5 @@
     <th>Invoice Id</th>
     <th>Customer</th>
   </tr>
-    <%= render @invoices => "invoices/invoice", :collection => @invoices %>
+    <%= render @invoices || "There are no invoices." %>
 </table>
