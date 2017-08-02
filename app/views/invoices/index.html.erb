@@ -4,5 +4,5 @@
     <th>Invoice Id</th>
     <th>Customer</th>
   </tr>
-    <%= render :partial => "invoices/invoice", :collection => @invoices %>
+    <%= render @invoices => "invoices/invoice", :collection => @invoices %>
 </table>
